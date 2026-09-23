@@ -1,0 +1,5 @@
+[project]
+name = "textkit"
+version = "0.1.0"
+description = "Pequeno utilitário de texto: transforma strings em slugs."
+requires-python = ">=3.11"
