@@ -3,11 +3,12 @@ import sys
 from textkit.slug import slugify
 
 
-def main() -> int:
-    if len(sys.argv) < 2:
+def main(argv: list[str] | None = None) -> int:
+    args = sys.argv[1:] if argv is None else argv
+    if not args:
         print("uso: textkit <texto>", file=sys.stderr)
         return 2
-    print(slugify(" ".join(sys.argv[1:])))
+    print(slugify(" ".join(args)))
     return 0
 
 

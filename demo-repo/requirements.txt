@@ -1,0 +1,4 @@
+# Ferramentas de desenvolvimento — versões pinadas para reproduzir o ambiente.
+pytest==8.3.5
+ruff==0.11.6
+mypy==1.16.0
