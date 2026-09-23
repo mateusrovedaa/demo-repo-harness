@@ -1,0 +1,9 @@
+---
+description: Regra para a CLI do textkit — argumentos, saída e código de saída.
+globs: src/textkit/cli.py
+alwaysApply: false
+---
+- Uso: `textkit <texto>` — junta todos os argumentos com espaço.
+- Sem argumentos: imprime o uso em stderr e retorna código 2.
+- Saída de sucesso: apenas o slug em stdout, com quebra de linha.
+- Não use bibliotecas de parsing de argumentos; o caso de uso não justifica.
