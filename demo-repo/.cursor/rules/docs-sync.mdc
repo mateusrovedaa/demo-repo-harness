@@ -1,0 +1,8 @@
+---
+description: Regra para documentação — README, AGENTS e exemplos sempre sincronizados com o comportamento real.
+globs: **/*.md
+alwaysApply: false
+---
+- Todo comando mostrado em README/AGENTS deve funcionar de verdade; rode antes de commitar.
+- Exemplo de saída do `slugify` deve bater com a implementação atual.
+- Mudança de comportamento em `slugify` exige atualizar os exemplos na mesma mudança.

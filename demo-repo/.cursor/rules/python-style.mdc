@@ -1,0 +1,11 @@
+---
+description: Convenções de estilo Python para todo o código do textkit.
+globs: src/**/*.py
+alwaysApply: false
+---
+- Assinaturas de função sempre com type hints explícitos.
+- Sem novas dependências: a biblioteca padrão resolve. Pergunte antes de
+  adicionar qualquer pacote.
+- Docstrings e mensagens em português (público BR); identificadores em inglês.
+- `slugify` deve ser determinística: mesma entrada, mesma saída, sempre.
+- Erros de entrada na CLI retornam código de saída diferente de zero.

@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "hooks": {
+    "beforeShellExecution": [
+      {
+        "command": "sh .cursor/hooks/deny-dangerous.sh",
+        "args": []
+      }
+    ],
+    "afterFileEdit": [
+      {
+        "command": "sh .cursor/hooks/format-on-edit.sh",
+        "args": []
+      }
+    ]
+  }
+}
